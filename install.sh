@@ -15,6 +15,8 @@ mkdir -p /mnt/server/steamcmd /mnt/server/logs
 mkdir -p "/mnt/server/.local/share/Arma 3" "/mnt/server/.local/share/Arma 3 - Other Profiles/server"
 cd "/mnt/server/.local/share/Arma 3 - Other Profiles/server"
 curl -sSLO ${PROFILE_CONFIG_URL}
+mv *.Arma3Profile ${SERVER_NAME}.Arma3Profile
+
 touch /mnt/server/latest.log
 chown -R root:root /mnt
 
